@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!------------< APP TITLE AREA >------------>
+
+    <header id="titleArea">
+        <div id="logoArea">
+            <img id="logo" src="https://ybewrjihzlcouulellpp.supabase.co/storage/v1/object/sign/MyNanoPrint_Images_MenuIcons/icon_logo.png?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNWY3YTlhOC03NGNmLTQ0YjItYmU5Zi1lYzUyMTRkNzVkMGYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNeU5hbm9QcmludF9JbWFnZXNfTWVudUljb25zL2ljb25fbG9nby5wbmciLCJpYXQiOjE3NTg2NzgyODYsImV4cCI6MTc5MDIxNDI4Nn0.CU3Q27QbQmKon8gscvd75xpZ_h0SepdFHZ9TNp0twzo" alt="leavelogo.png">
+            <h2 id="titleElement"> MY NANO-PRINT</h2>
+        </div>
+        <button id="button_pendingLogIn" class="button_loggedStatus"> LOG-IN 🔴</button>
+        <button id="button_loggedIn" class="button_loggedStatus hidden"> PROFILE 🟢</button>
+    </header>
+
+    <!------------< MENU BUTTONS AREA >------------>
+
+    <nav id="menuButtonsArea" class="">
+        <button id="buttonNews" class="button_menuOption">
+            
+
+            <img class="menuButton_icon" src="https://ybewrjihzlcouulellpp.supabase.co/storage/v1/object/sign/MyNanoPrint_Images_MenuIcons/icon_news.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNWY3YTlhOC03NGNmLTQ0YjItYmU5Zi1lYzUyMTRkNzVkMGYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNeU5hbm9QcmludF9JbWFnZXNfTWVudUljb25zL2ljb25fbmV3cy5zdmciLCJpYXQiOjE3NTg2NzU3NDcsImV4cCI6MTc5MDIxMTc0N30.k8h4MJWmHRYSSBv0SxQ9pgwoWRsRZUura_I3_yknZ9g" alt="iconHome">
+            <p class="menuButton_text">NEWS</p>
+        </button>
+        <button id="buttonActivityLog" class="button_menuOption">
+            <img class="menuButton_icon" src="https://ybewrjihzlcouulellpp.supabase.co/storage/v1/object/sign/MyNanoPrint_Images_MenuIcons/icons_log.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNWY3YTlhOC03NGNmLTQ0YjItYmU5Zi1lYzUyMTRkNzVkMGYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNeU5hbm9QcmludF9JbWFnZXNfTWVudUljb25zL2ljb25zX2xvZy5zdmciLCJpYXQiOjE3NTg2NzU5MTcsImV4cCI6MTc5MDIxMTkxN30.5resQR73UlkR5Z0cDJHVxHoWXwNUQic7pIwzAB1s1iA" alt="iconHome">
+            <p class="menuButton_text">ADD</p>
+        </button>
+        <button id="buttonChart" class="button_menuOption">
+            <img class="menuButton_icon" src="https://ybewrjihzlcouulellpp.supabase.co/storage/v1/object/sign/MyNanoPrint_Images_MenuIcons/icons_chart.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNWY3YTlhOC03NGNmLTQ0YjItYmU5Zi1lYzUyMTRkNzVkMGYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNeU5hbm9QcmludF9JbWFnZXNfTWVudUljb25zL2ljb25zX2NoYXJ0LnN2ZyIsImlhdCI6MTc1ODY3NTg0NCwiZXhwIjoxNzkwMjExODQ0fQ.9Vy5DgCbcnQMZOr0evqZD5Brfm0TNB5HW2iY13C8Qjc" alt="iconHome">
+            <p class="menuButton_text">CHART</p>
+        </button>
+        <button id="buttonRecap" class="button_menuOption">
+            <img class="menuButton_icon" src="https://ybewrjihzlcouulellpp.supabase.co/storage/v1/object/sign/MyNanoPrint_Images_MenuIcons/icons_recap.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNWY3YTlhOC03NGNmLTQ0YjItYmU5Zi1lYzUyMTRkNzVkMGYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNeU5hbm9QcmludF9JbWFnZXNfTWVudUljb25zL2ljb25zX3JlY2FwLnN2ZyIsImlhdCI6MTc1ODY3NTkwNSwiZXhwIjoxNzkwMjExOTA1fQ.DfEsC8xZp2wyX_HrPz_VLOVFLzAxhqZ-YsXdQ12mmfI" alt="iconHome">
+            <p class="menuButton_text">RECAP</p>
+        </button>
+        <button id="buttonIdeas" class="button_menuOption">
+            <img class="menuButton_icon" src="https://ybewrjihzlcouulellpp.supabase.co/storage/v1/object/sign/MyNanoPrint_Images_MenuIcons/icons_idea.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV9hNWY3YTlhOC03NGNmLTQ0YjItYmU5Zi1lYzUyMTRkNzVkMGYiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNeU5hbm9QcmludF9JbWFnZXNfTWVudUljb25zL2ljb25zX2lkZWEuc3ZnIiwiaWF0IjoxNzU4Njc1ODgyLCJleHAiOjE3OTAyMTE4ODJ9.5xUxv3n8tHjXb5zCjtLR__lpcd4tkktturHtNpXw0vc" alt="iconHome">
+            <p class="menuButton_text">IDEAS</p>
+        </button>
+    </nav>
+
+    <!------------< CONTENT AREA >------------>
+
+    <main id="contentArea">
+
+        <!------------| ACCESS SECTION |------------>
+
+        <section id="accessSection" class="hidden">
+
+            <div id="div_logIn" class="section_access_div">
+                <h2 id="logIn_subtitle" class="titleElementH2 subtitleBox"> ➡️ LOG IN</h2>
+                
+                <form id="logIn_form">
+                    <div class="box-input-row" >
+                        <label for="logIn_inputField_email" class="box-icon-input">✉️</label>
+                        <input type="email" name="email" id="logIn_inputField_email" class="inputField" placeholder="Email">
+                    </div>
+                    <div class="box-input-row">
+                        <label for="logIn_inputField_password" class="box-icon-input">🔒</label>
+                        <input type="password" name="password" id="logIn_inputField_password" class="inputField" placeholder="Password">
+                    </div>
+                    <p id="logIn_errorMessage" class="errorMessage hidden">"error message"</p>
+                    <button type="submit" id="logIn_button_submit" class="button_submit">LOG IN</button>
+                </form>
+                <!-- <p id="text_wantSignUp" class="text_logIn-signUp-alternative">Don't have an Account? - <a href="login.html">Sign Up</a></p> -->
+            </div>
+
+            <div id="div_signUp" class="section_access_div">
+                <h2 id="signUp_subtitle" class="titleElementH2 subtitleBox"> ✒️SIGN UP</h2>
+                <form id="signUp_form">
+                    <div class="box-input-row">
+                        <label for="signUp_inputField_firstname" class="box-icon-input">🛃</label><!--ICON PLACEHOLDER-->
+                        <input type="text" name="firstname" id="signUp_inputField_firstname" class="inputField" placeholder="First Name">
+                    </div>
+                    <div class="box-input-row">
+                        <label for="signUp_inputField_email" class="box-icon-input">✉️</label><!--ICON PLACEHOLDER-->
+                        <input type="email" name="email" id="signUp_inputField_email" class="inputField" placeholder="Email">
+                    </div>
+                    <div class="box-input-row">
+                        <label for="signUp_inputField_password" class="box-icon-input">🔒</label><!--ICON PLACEHOLDER-->
+                        <input type="password" name="password" id="signUp_inputField_password" class="inputField" placeholder="Password">
+                    </div>
+                    <i>Please repeat Password again</i>
+                    <div class="box-input-row">
+                        <label for="signUp_inputField_repeatPassword" class="box-icon-input">✳️</label><!--ICON PLACEHOLDER-->
+                        <input type="password" name="repeatPassword" id="signUp_inputField_repeatPassword" class="inputField" placeholder="Repeat Password">
+                    </div>
+                    <p id="signUp_errorMessage" class="errorMessage hidden">"error message"</p>
+                    <button type="submit" id="signUp_button_submit" class="button_submit">SIGN UP</button>
+                </form>
+                <!-- <p id="text-haveAccount" class="text_logIn-signUp-alternative">Have an Account? - <a href="login.html">Login</a></p> -->
+            </div>
+
+            <p id="or">or</p>
+
+            <button id="button_guestAccess">NAVIGATE AS GUEST</button>
+
+        </section>
+
+        <!------------| PROFILE SECTION |------------>
+
+        <section id="profileSection" class="hidden">
+            <h2 id="profile_subtitle" class="titleElementH2 subtitleBox"> ✅MYPROFILE</h2>
+            
+            <div id="div_profile" class="section_profile_div">
+
+                <div id="box_profileName" class="box_profileElement">
+                    <h4>Name</h4>
+                    <h3 id="profile_userName">Name Placeholder</h3>
+                </div>
+
+                <div id="box_profileEmail" class="box_profileElement">
+                    <h4>Email</h4>
+                    <h3 id="profile_userEmail">placeholder@yahoo.com</h3>
+                </div>
+
+                <div id="box_profileLogCount" class="box_profileElement">
+                    <h4>Logged Events </h4>
+                    <h3 id="profile_userActivityCount">00</h3>
+                </div>
+
+                <button id="button_signOut" class="text_profile-signUp-alternative button_submit">Log Out?</button>
+            </div>
+        </section>
+
+        <!------------| NEWS SECTION |------------>
+
+        <section id="newsSection" class="hidden">
+            <div id="newsHeaderContainer" class="subtitleBox"><h2 class="titleElementH2"> 🏠 NEWS </h2></div>
+
+            <div id="newsArticleContainer">
+                <div class="newsArticle">
+                    <h3 class="newsArticleTitle">Loading News Title....</h3>
+                    <div class="newsArticleContent">
+                        <div class="newsArticleContent_Top">
+                            <img class="newsArticleIMG" src="/assets/Placeholder1.png">
+                            <p class="newsArticleText">Loading news content, please wait...</p>
+                        </div>
+                        <div class="newsArticleContent_Bot">
+                            <p class="newsArticleDate">2025-00-00</p>
+                            <a href="https://examplewebsite.com/" class="newsArticleURL">Loading...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------| LOG ACTIVITY SECTION |------------>
+
+        <section id="activitySection" class="hidden">
+
+            <div id="subtitleBox_LogActivity" class="subtitleBox">
+                <h2 class="titleElementH2">➕ LOG ACTIVITY</h2>
+            </div>
+
+            <div id="div_submitNewActivity" class="activitySectionDiv">
+
+                <form id="sectionActivityForm">
+
+                    <h4 id="activityForm_subTitle_Category" class="activityForm_subTitle">Category</h4>
+                    <select name="activityForm_mainDropdown" id="mainDropdown_activityCategory">
+                        <option value="null">Select Category</option>
+                        <option value="residential">Residential Services</option>
+                        <option value="food">Food & Meals</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="transport">Transport</option>
+                    </select>
+
+                    <h4 id="activityForm_subTitle_Type" class="activityForm_subTitle hidden">Type</h4>
+                    <select name="activityForm_ResidentialActivity" id="dropdown_residentialActivity" class="secDropdown_activityType hidden">
+                        <option value="null" class="residential">Select Type</option>
+                        <option value="airCooling" class="residential">Air Cooling</option>
+                        <option value="airHeating" class="residential">Air Heating</option>
+                        <option value="energyConsumption" class="residential">General Energy Use</option>
+                    </select> 
+                    <select name="activityForm_FoodActivity" id="dropdown_foodActivity" class="secDropdown_activityType hidden">
+                        <option value="null">Select Type</option>
+                        <option value="groceries" class="food">Groceries</option>
+                        <option value="delivery" class="food">Food Delivery</option>
+                        <option value="diningOut" class="food">Dining Out</option>
+                    </select>                     
+                    <select name="activityForm_ShoppingActivity" id="dropdown_shoppingActivity" class="secDropdown_activityType hidden">
+                        <option value="null">Select Type</option>
+                        <option value="electronics" class="shopping">Electronics</option>
+                        <option value="furniture" class="shopping">Furniture</option>
+                        <option value="householdAppliance" class="shopping">Household Appliance</option>
+                    </select>
+                    <select name="activityForm_TransportActivity" id="dropdown_transportActivity" class="secDropdown_activityType hidden">
+                        <option value="null">Select Type</option>
+                        <option value="bicycle" class="transport">Bicycle</option>
+                        <option value="carpooling" class="transport">Carpooling</option>    
+                        <option value="electricBicycle" class="transport">Electric Bicycle</option>                       
+                        <option value="motorcycle" class="transport">Motorcycle</option>
+                        <option value="bus" class="transport">Bus</option>
+                        <option value="train" class="transport">Train</option>
+                        <option value="electricCar" class="transport sizeNeeded">Electric Car</option>   
+                        <option value="petrolCar" class="transport sizeNeeded">Petrol Car</option>
+                        <option value="airplane" class="transport">Airplane</option>
+                    </select>
+
+                    <div id="tertiaryDropdownBox_Sizes" class="tertiaryDropdownBox hidden">
+                        <h4 id="activityForm_subTitle_Sizes" class="activityForm_subTitle">Size</h4>
+                        <select name="activityForm_Sizes" id="dropdown_Sizes" class="thirdDropdown">
+                            <option value="null">Select Size</option>
+                            <option value="regular">Regular</option> 
+                            <option value="large">Large</option>
+                        </select>
+                        <div id="activityForm_sizeExample" class="hidden"></div>
+                    </div>
+
+                    <div id="tertiaryDropdownBox_ResidentialSizes" class="tertiaryDropdownBox hidden">
+                        <h4 id="activityForm_subTitle_Residential" class="activityForm_subTitle">Residential Size</h4>
+                        <select name="activityForm_ResidentialSizes" id="dropdown_ResidentialSizes" class="thirdDropdown">
+                            <option value="small">Small (&lt; 95Sqm) </option>
+                            <option value="average">Average (95Sqm - 125Sqm)</option>
+                            <option value="big">Big (&gt; 125Sqm) </option>
+                        </select> 
+                    </div>
+
+                    <div id="tertiaryDropdownBox_Days" class="tertiaryDropdownBox hidden">
+                        <h4 id="activityForm_subTitle_Days" class="activityForm_subTitle">Amount of Time</h4>
+                        <select name="activityForm_AmountOfDays" id="dropdown_DaysAmount" class="thirdDropdown">
+                            <option value="1">1 Day</option>
+                            <option value="2">2 Days</option>    
+                            <option value="3">3 Days</option>
+                            <option value="4">4 Days</option>    
+                            <option value="5">5 Days</option>
+                            <option value="6">6 Days</option>
+                            <option value="7">1 Week</option>
+                            <option value="14">2 Weeks</option>
+                            <option value="21">3 Weeks</option>
+                            <option value="30">4 Weeks</option>
+                        </select>                        
+                    </div>
+                    
+                    <div id="tertiaryDropdownBox_Quantity" class="tertiaryDropdownBox hidden">
+                        <h4 id="activityForm_subTitle_Quantity" class="activityForm_subTitle">Quantity</h4>
+                        <select name="activityForm_Quantity" id="dropdown_Quantity" class="thirdDropdown">
+                            <option value="1">1</option> 
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div id="tertiaryDropdownBox_PeopleQuantity" class="tertiaryDropdownBox hidden">
+                        <h4 id="activityForm_subTitle_PeopleQuantity" class="activityForm_subTitle">Quantity of People</h4>
+                        <select name="activityForm_PeopleQuantity" id="dropdown_PeopleQuantity" class="thirdDropdown">
+                            <option value="qty1">1 - 2</option> 
+                            <option value="qty3">3 - 4</option>
+                            <option value="qty5">5 - 6</option>
+                            <option value="qty7">7 - 9</option>
+                            <option value="qty10">10 - 14</option>
+                            <option value="qty15">15 - 19</option>
+                            <option value="qty20">20 - 30</option>
+                        </select>
+                    </div>
+                    
+                    <div id="activityForm_score">Impact Score: 00</div>
+                    
+                    <button id="submitActivityButton" type="submit" disabled>SUBMIT NEW</button>
+                </form>
+
+            </div>
+
+            <hr>
+
+            <div id="div_recentActivities" class="activitySectionDiv">
+                <h3 id="subtitle_RecentActivities">Recent Activities</h3>
+                <div class="submittedActivityBox">
+                    <div class="submittedActivityBox_top">
+                        <p class="submittedActivityName">Example Activity Name</p>
+                        <p class="submittedActivityDate">2025-00-00</p>      
+                    </div>
+                    <div class="submittedActivityBox_bottom">
+                        <p class="submittedActivityCategory">Placeholder</p>
+                        <p class="submittedActivityResidentialSize">Placeholder</p>
+                        <p class="submittedActivityItemSize">Placeholder</p>
+                        <p class="submittedActivityGeneralQty">00</p>
+                        <p class="submittedActivityPeopleQty">20 - 30</p>   
+                        <p class="submittedActivityDays">00</p>
+                        <p class="impactScore">00</p>  
+                    </div>
+                </div>
+
+                <div class="submittedActivityBox">
+                    <div class="submittedActivityBox_top">
+                        <p class="submittedActivityName">Example Activity Name</p>
+                        <p class="submittedActivityDate">2025-00-00</p>      
+                    </div>
+                    <div class="submittedActivityBox_bottom">
+                        <p class="submittedActivityCategory">Placeholder</p>
+                        <p class="submittedActivityResidentialSize">Placeholder</p>
+                        <p class="submittedActivityItemSize">Placeholder</p>
+                        <p class="submittedActivityGeneralQty">00</p>
+                        <p class="submittedActivityPeopleQty">20 - 30</p>   
+                        <p class="submittedActivityDays">00</p>
+                        <p class="impactScore">00</p>  
+                    </div>
+                </div>                
+            </div>
+
+        </section>
+
+        <!------------| STATISTICS CHART SECTION |------------>
+
+        <section id="statisticsSection" class="hidden">
+            <div id="subtitleStatistics" class="subtitleBox"><h2 class="titleElementH2">📈 STATS CHART</h2></div>
+            
+            <div id="chartContainer" style="padding: 1rem; background-color: #f9f9f9; border-radius: 8px;">
+                <canvas id="activityChart"></canvas>
+                <p id="noDataMessage" class="hidden">
+                    Please enter new activities to display graphics...
+                </p>
+            </div>
+        </section>
+        
+        <!------------| MONTHLY RECAP SECTION |------------>
+
+        <section id="monthlyRecapSection" class="hidden">
+            <div id="subtitleMonthlyRecap" class="subtitleBox"><h2 class="titleElementH2">📅 RECAP</h2></div>
+            <div class="box_activitiesByMonth">
+                <div class="date">
+                    <div class="activitiesMonth">MON</div>
+                    <div class="activitiesyear">2025</div>
+                </div>
+                <div class="box_activityList">
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                </div>
+            </div>
+                        <div class="box_activitiesByMonth">
+                <div class="date">
+                    <div class="activitiesMonth">MON</div>
+                    <div class="activitiesyear">2025</div>
+                </div>
+                <div class="box_activityList">
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                    <div class="singleActivity">Activity PlaceHolder - <span class="singleActivity_Score">000</span></div>
+                </div>
+            </div>
+
+            
+
+        </section>
+
+        <!------------| IDEAS SECTION |------------>
+
+        <section id="ideasSection" class="hidden">
+            <div id="subtitleIdeas" class="subtitleBox"><h2 class="titleElementH2">💡IDEAS</h2></div>
+            <div class="ideasArticle">
+                <div class="ideasArticleContent">
+                    <div class="ideasArticleTitle">TITLE PLACEHOLDER</div>
+                    <p class="ideasArticleText">Lorem ipsum dolor sit ameta aasas ansectetur adipisicing elit. Cum, quas optio, atque veritatis? Officiis, assumenda alias commodi natus impedit minus laborum.</p>
+                </div>
+                <div class="ideasArticleBackground">
+                    <div class="ideasArticleBackground_darkOverlay"></div>
+                    <img class="ideasArticleBackground" src="/assets/Placeholder1.png">
+                </div>
+            </div>
+            <div class="ideasArticle">
+                <div class="ideasArticleContent">
+                    <div class="ideasArticleTitle">TITLE</div>
+                    <p class="ideasArticleText">Lorem ipsum dolor sit ameta aasas ansectetur adipisicing elit. Cum, quas optio, atque veritatis? Officiis, assumenda alias commodi natus impedit minus laborum.</p>
+                </div>
+                <div class="ideasArticleBackground">
+                    <div class="ideasArticleBackground_darkOverlay"></div>
+                    <img class="ideasArticleBackground" src="/assets/Placeholder1.png">
+                </div>
+            </div>
+            <div class="ideasArticle">
+                <div class="ideasArticleContent">
+                    <div class="ideasArticleTitle">TITLE</div>
+                    <p class="ideasArticleText">Lorem ipsum dolor sit ameta aasas ansectetur adipisicing elit. Cum, quas optio, atque veritatis? Officiis, assumenda alias commodi natus impedit minus laborum.</p>
+                </div>
+                <div class="ideasArticleBackground">
+                    <div class="ideasArticleBackground_darkOverlay"></div>
+                    <img class="ideasArticleBackground" src="/assets/Placeholder1.png">
+                </div>
+            </div>                        
+        </section>
+        
+    </main> <!--Content Area ENDS-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/handler_databaseClient.js"></script>
+    <script src="/handler_auth.js"></script> 
+    <script src="/handler_news.js"></script>
+    <script src="/script.js"></script>
+    <script src="/handler_menuButtons.js"></script>
+    <script src="/handler_activityPersistence.js"></script>
+    <script src="/handler_activityLog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="/handler_statisticsChart.js"></script>
+    <script src="/handler_monthRecap.js"></script>
+    <script src="/handler_ideas.js"></script>
+
+</body>
+</html>
